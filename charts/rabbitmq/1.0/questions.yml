@@ -19,22 +19,3 @@ questions:
     description: "Docker image tag"
     type: string
     label: rabbit Image Tag
-- variable: service.type
-  default: "ClusterIP"
-  description: "rabbitmq K8s Service type"
-  type: enum
-  options:
-    - "ClusterIP"
-    - "NodePort"
-  required: true
-  label: rabbitmq Service Type
-  show_subquestion_if: "NodePort"
-  group: "Services and Load Balancing"
-  subquestions:
-  - variable: service.nodePort
-    default: ""
-    description: "NodePort port number(to set explicitly, choose port between 30000-32767)"
-    type: int
-    min: 30000
-    max: 32767
-    label: Service NodePort number
