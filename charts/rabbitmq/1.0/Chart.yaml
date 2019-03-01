@@ -1,5 +1,5 @@
 appVersion: 1.0.0
-description: rabbitmq-server port 5672 ,rabbitmq_management port 15672
+description: rabbitmq-server port 5672 ,rabbitmq_management port 15672,default user guest,default password guest
 name: rabbitmq
 version: 1.0.0
 keywords:
