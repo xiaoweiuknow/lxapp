@@ -7,10 +7,10 @@ spec:
   ports:
     - port: 5672
       targetPort: 5672
-      name: rabbitmq-server_port
+      name: serverport
     - port: 15672
       targetPort: 15672
-      name: rabbitmq_management_port
+      name: manageport
   selector:
     app: {{ template "rabbitmq.name" . }}
     release: "{{ .Release.Name }}"
