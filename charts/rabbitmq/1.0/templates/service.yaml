@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: {{ template "rabbitmq.fullname" . }}
 spec:
-  type: {{ .Values.service.type }}
+  type: NodePort
   ports:
     - port: 5672
       targetPort: 5672
